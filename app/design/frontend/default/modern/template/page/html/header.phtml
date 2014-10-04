@@ -1,0 +1,100 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_modern
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="Great As Seen On TV Logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+        <?php echo $this->getChildHtml('topBar') ?>
+        <!-- <p class="top-promo" title="<?php echo $this->__('Free Shipping on orders over 50$'); ?>"><?php echo $this->__('Free Shipping on orders over 50$'); ?></p> -->
+        <?php echo $this->getChildHtml('topMenu') ?>
+    </div>
+    <div style="color:#e6e6e6;">
+    <section id="slider">
+        <div id="coin-slider">
+            <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/i/n/instaler.jpg" alt="ASL Store" />
+                <span>
+                    <b>Click this image to go to the store NOW! </b>
+                </span>
+            </a>
+
+            <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/b/e/beactive.jpg" alt="ASL Store products" />
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/a/q/aqua_rug1.jpg" alt="myASLTech" />
+                <span>
+                    <b>Click this image to go to the store NOW!</b>
+                </span>
+            </a>
+
+            <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/c/o/comfy.jpg" alt="myASLTech" />
+                <span>
+                    <b>Click this image to go to myASLTech NOW!</b>
+                </span>
+            </a>
+
+            <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/h/u/hurrycane5.jpg" alt="myASLTech" />
+                <span>
+                    <b>Click this image to go to myASLTech NOW!</b>
+                </span>
+            </a>
+            <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/a/q/aqua_rug1.jpg" alt="myASLTech" />
+                <span>
+                    <b>Click this image to get myASLTech membership NOW!</b>
+                </span>
+            </a>
+             <a href="">
+                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/m/y/my_fun_fish_self-cleaning_fish_tank1.jpg" alt="Awards IDRT has won" />
+                <span>
+                    <b>Click this image to learn more about IDRT</b>
+                </span>
+            </a>
+        </div>
+    </section>
+    </div>
+    <div class="quick-access">
+        <?php echo $this->getChildHtml('store_language') ?>
+        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
+        <?php echo $this->getChildHtml('topLinks') ?>
+    </div>
+
+    <?php echo $this->getChildHtml('topContainer'); ?>
+</div>
+    <script type="text/javascript">
+        var $j=jQuery.noConflict();
+        $j(document).ready(function() {
+            $j('#coin-slider').coinslider({ width: 900, height: 170, opacity: 0.8,navigation: true, hoverPause: false, delay: 5000 });
+        });
+    </script>
