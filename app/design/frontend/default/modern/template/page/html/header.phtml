@@ -109,6 +109,9 @@
             //responsive code end
         });
     </script>
+<?php
+    if($this->getIsHomePage()) {
+?>
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
 
@@ -143,15 +146,15 @@
       </div>
     </div>
     <div> <img u="image" src="/js/lib/jssor/images/pink-armor.png" />
-      <div u="thumb"> <img class="i" src="../img/photography/thumb-005.jpg" />
+      <div u="thumb"> <img class="i" src="/media/catalog/product/cache/1/thumbnail/95x/9df78eab33525d08d6e5fb8d27136e95/p/i/pink_armor_nail_gel1.jpg" />
         <div class="t">Pink Armor</div>
         <div class="c">Strong, Beautiful Nails ... Fast!</div>
       </div>
     </div>
-    <div> <img u="image" src="/js/lib/jssor/images/" />
-      <div u="thumb"> <img class="i" src="../img/photography/thumb-006.jpg" />
-        <div class="t">Tab Slider</div>
-        <div class="c">Tab slider with auto play options</div>
+    <div> <img u="image" src="/js/lib/jssor/images/poncho.png" />
+      <div u="thumb"> <img class="i" src="/media/catalog/product/cache/1/thumbnail/95x/9df78eab33525d08d6e5fb8d27136e95/3/-/3-way_poncho1.jpg" />
+        <div class="t">3-Way Poncho</div>
+        <div class="c">Easy to fit garment.</div>
       </div>
     </div>
   </div>
@@ -261,56 +264,12 @@
   <a style="display: none" href="http://www.jssor.com">jquery slider example</a>
 </div>
     <!-- Jssor Slider End -->
-
+<?php
+}
+?>
 
     <div style="color:#e6e6e6;">
 
-<!--
-    <section id="slider">
-        <div id="coin-slider">
-            <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/i/n/instaler.jpg" alt="ASL Store" />
-                <span>
-                    <b>Click this image to go to the store NOW! </b>
-                </span>
-            </a>
-
-            <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/b/e/beactive.jpg" alt="ASL Store products" />
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/a/q/aqua_rug1.jpg" alt="myASLTech" />
-                <span>
-                    <b>Click this image to go to the store NOW!</b>
-                </span>
-            </a>
-
-            <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/c/o/comfy.jpg" alt="myASLTech" />
-                <span>
-                    <b>Click this image to go to myASLTech NOW!</b>
-                </span>
-            </a>
-
-            <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/h/u/hurrycane5.jpg" alt="myASLTech" />
-                <span>
-                    <b>Click this image to go to myASLTech NOW!</b>
-                </span>
-            </a>
-            <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/a/q/aqua_rug1.jpg" alt="myASLTech" />
-                <span>
-                    <b>Click this image to get myASLTech membership NOW!</b>
-                </span>
-            </a>
-             <a href="">
-                <img src="http://greatasseenontv.com/media/catalog/product/cache/1/small_image/170x/9df78eab33525d08d6e5fb8d27136e95/m/y/my_fun_fish_self-cleaning_fish_tank1.jpg" alt="Awards IDRT has won" />
-                <span>
-                    <b>Click this image to learn more about IDRT</b>
-                </span>
-            </a>
-        </div>
-    </section>
-    -->
     </div>
     <div class="quick-access">
         <?php echo $this->getChildHtml('store_language') ?>
