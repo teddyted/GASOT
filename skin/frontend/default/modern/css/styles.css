@@ -532,7 +532,7 @@ tr.summary-details-excluded { font-style:italic; }
 #nav li ul span {white-space:normal;*/ }
 
 /* 0 Level */
-#nav li { float:left; margin:1px 6px 1px 1px; padding:1px 2px; }
+#nav li { float:left; margin:1px 4px 1px 1px; padding:1px 2px; }
 #nav li.active a { color:#330000;font-weight:bold; }
 /*
 #nav a { float:left; background:url(../images/bkg_nav_top.gif) no-repeat 100% 50%; padding-right:11px; color:#FFF; font-weight:bold; }
